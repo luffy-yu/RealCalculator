@@ -15,6 +15,12 @@
 		9E89457C25738CE9009FFE69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89455125738CE6009FFE69 /* ContentView.swift */; };
 		9E89457D25738CE9009FFE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E89455225738CE9009FFE69 /* Assets.xcassets */; };
 		9E89457E25738CE9009FFE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E89455225738CE9009FFE69 /* Assets.xcassets */; };
+		9E894633257B8018009FFE69 /* CustomObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894632257B8018009FFE69 /* CustomObject.mm */; };
+		9E894634257B8018009FFE69 /* CustomObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894632257B8018009FFE69 /* CustomObject.mm */; };
+		9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
+		9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
+		9E894699257BD498009FFE69 /* cmoc in Resources */ = {isa = PBXBuildFile; fileRef = 9E894698257BD498009FFE69 /* cmoc */; };
+		9E89469A257BD498009FFE69 /* cmoc in Resources */ = {isa = PBXBuildFile; fileRef = 9E894698257BD498009FFE69 /* cmoc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		9E89457225738CE9009FFE69 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E89457625738CE9009FFE69 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9E89457825738CE9009FFE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E894631257B8018009FFE69 /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		9E894632257B8018009FFE69 /* CustomObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomObject.mm; sourceTree = "<group>"; };
+		9E89467A257B9744009FFE69 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+		9E894698257BD498009FFE69 /* cmoc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmoc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +109,15 @@
 		9E89454F25738CE6009FFE69 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9E89469F257BD537009FFE69 /* bridges */,
+				9E894698257BD498009FFE69 /* cmoc */,
 				9E89455025738CE6009FFE69 /* RealCalculatorApp.swift */,
 				9E89455125738CE6009FFE69 /* ContentView.swift */,
 				9E89455225738CE9009FFE69 /* Assets.xcassets */,
+				9E894631257B8018009FFE69 /* CustomObject.h */,
+				9E894632257B8018009FFE69 /* CustomObject.mm */,
+				9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */,
+				9E89467A257B9744009FFE69 /* TestSwift.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,6 +166,13 @@
 				9E89457825738CE9009FFE69 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		9E89469F257BD537009FFE69 /* bridges */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bridges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +259,11 @@
 				TargetAttributes = {
 					9E89455625738CE9009FFE69 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					9E89455E25738CE9009FFE69 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					9E89456625738CE9009FFE69 = {
 						CreatedOnToolsVersion = 12.2;
@@ -275,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E894699257BD498009FFE69 /* cmoc in Resources */,
 				9E89457D25738CE9009FFE69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E89469A257BD498009FFE69 /* cmoc in Resources */,
 				9E89457E25738CE9009FFE69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E89457B25738CE9009FFE69 /* ContentView.swift in Sources */,
+				9E894633257B8018009FFE69 /* CustomObject.mm in Sources */,
 				9E89457925738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
+				9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E89457C25738CE9009FFE69 /* ContentView.swift in Sources */,
+				9E894634257B8018009FFE69 /* CustomObject.mm in Sources */,
 				9E89457A25738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
+				9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,9 +502,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5E8FU89THK;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "Shared/cmoc/**";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +517,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME:c99extidentifier)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,9 +530,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5E8FU89THK;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "Shared/cmoc/**";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,6 +545,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME:c99extidentifier)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -515,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -530,6 +574,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -539,6 +585,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -554,6 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
