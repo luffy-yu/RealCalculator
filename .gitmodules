@@ -1,3 +1,3 @@
-[submodule "Shared/cmoc"]
-	path = Shared/cmoc
+[submodule "Shared/CM"]
+	path = Shared/CM
 	url = https://github.com/luffy-yu/CM.git

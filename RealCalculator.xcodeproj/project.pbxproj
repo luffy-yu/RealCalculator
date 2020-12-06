@@ -19,8 +19,85 @@
 		9E894634257B8018009FFE69 /* CustomObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894632257B8018009FFE69 /* CustomObject.mm */; };
 		9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
 		9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
-		9E894699257BD498009FFE69 /* cmoc in Resources */ = {isa = PBXBuildFile; fileRef = 9E894698257BD498009FFE69 /* cmoc */; };
-		9E89469A257BD498009FFE69 /* cmoc in Resources */ = {isa = PBXBuildFile; fileRef = 9E894698257BD498009FFE69 /* cmoc */; };
+		9E89470A257BF027009FFE69 /* BridgeOne.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894709257BF027009FFE69 /* BridgeOne.mm */; };
+		9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894709257BF027009FFE69 /* BridgeOne.mm */; };
+		9E894775257C637E009FFE69 /* TempCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894773257C637E009FFE69 /* TempCPP.cpp */; };
+		9E894776257C637E009FFE69 /* TempCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894773257C637E009FFE69 /* TempCPP.cpp */; };
+		9E89478A257C665F009FFE69 /* Temp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89477F257C65DB009FFE69 /* Temp2.cpp */; };
+		9E89478F257C665F009FFE69 /* Temp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89477F257C65DB009FFE69 /* Temp2.cpp */; };
+		9E89496C257C6AC0009FFE69 /* StandardCalculatorViewModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */; };
+		9E89496D257C6AC0009FFE69 /* StandardCalculatorViewModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */; };
+		9E89496E257C6AC0009FFE69 /* UnitConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894923257C6ABF009FFE69 /* UnitConverter.cpp */; };
+		9E89496F257C6AC0009FFE69 /* UnitConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894923257C6ABF009FFE69 /* UnitConverter.cpp */; };
+		9E894970257C6AC0009FFE69 /* Rational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894929257C6ABF009FFE69 /* Rational.cpp */; };
+		9E894971257C6AC0009FFE69 /* Rational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894929257C6ABF009FFE69 /* Rational.cpp */; };
+		9E894972257C6AC0009FFE69 /* CalcUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89492B257C6ABF009FFE69 /* CalcUtils.cpp */; };
+		9E894973257C6AC0009FFE69 /* CalcUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89492B257C6ABF009FFE69 /* CalcUtils.cpp */; };
+		9E894974257C6AC0009FFE69 /* CalcInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89492C257C6ABF009FFE69 /* CalcInput.cpp */; };
+		9E894975257C6AC0009FFE69 /* CalcInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89492C257C6ABF009FFE69 /* CalcInput.cpp */; };
+		9E894976257C6AC0009FFE69 /* History.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894932257C6ABF009FFE69 /* History.cpp */; };
+		9E894977257C6AC0009FFE69 /* History.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894932257C6ABF009FFE69 /* History.cpp */; };
+		9E894978257C6AC0009FFE69 /* scifunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894933257C6ABF009FFE69 /* scifunc.cpp */; };
+		9E894979257C6AC0009FFE69 /* scifunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894933257C6ABF009FFE69 /* scifunc.cpp */; };
+		9E89497A257C6AC0009FFE69 /* calc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894934257C6ABF009FFE69 /* calc.cpp */; };
+		9E89497B257C6AC0009FFE69 /* calc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894934257C6ABF009FFE69 /* calc.cpp */; };
+		9E89497C257C6AC0009FFE69 /* RationalMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894935257C6ABF009FFE69 /* RationalMath.cpp */; };
+		9E89497D257C6AC0009FFE69 /* RationalMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894935257C6ABF009FFE69 /* RationalMath.cpp */; };
+		9E89497E257C6AC0009FFE69 /* scidisp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894937257C6ABF009FFE69 /* scidisp.cpp */; };
+		9E89497F257C6AC0009FFE69 /* scidisp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894937257C6ABF009FFE69 /* scidisp.cpp */; };
+		9E894980257C6AC0009FFE69 /* scioper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894938257C6ABF009FFE69 /* scioper.cpp */; };
+		9E894981257C6AC0009FFE69 /* scioper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894938257C6ABF009FFE69 /* scioper.cpp */; };
+		9E894982257C6AC0009FFE69 /* sciset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493A257C6ABF009FFE69 /* sciset.cpp */; };
+		9E894983257C6AC0009FFE69 /* sciset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493A257C6ABF009FFE69 /* sciset.cpp */; };
+		9E894984257C6AC0009FFE69 /* scicomm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493C257C6ABF009FFE69 /* scicomm.cpp */; };
+		9E894985257C6AC0009FFE69 /* scicomm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493C257C6ABF009FFE69 /* scicomm.cpp */; };
+		9E894986257C6AC0009FFE69 /* Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493E257C6ABF009FFE69 /* Number.cpp */; };
+		9E894987257C6AC0009FFE69 /* Number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89493E257C6ABF009FFE69 /* Number.cpp */; };
+		9E894988257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894947257C6ABF009FFE69 /* ExpressionCommand.cpp */; };
+		9E894989257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894947257C6ABF009FFE69 /* ExpressionCommand.cpp */; };
+		9E89498A257C6AC0009FFE69 /* StringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894949257C6ABF009FFE69 /* StringUtils.cpp */; };
+		9E89498B257C6AC0009FFE69 /* StringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894949257C6ABF009FFE69 /* StringUtils.cpp */; };
+		9E89498C257C6AC0009FFE69 /* num.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494B257C6ABF009FFE69 /* num.cpp */; };
+		9E89498D257C6AC0009FFE69 /* num.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494B257C6ABF009FFE69 /* num.cpp */; };
+		9E89498E257C6AC0009FFE69 /* logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494C257C6ABF009FFE69 /* logic.cpp */; };
+		9E89498F257C6AC0009FFE69 /* logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494C257C6ABF009FFE69 /* logic.cpp */; };
+		9E894990257C6AC0009FFE69 /* exp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494D257C6ABF009FFE69 /* exp.cpp */; };
+		9E894991257C6AC0009FFE69 /* exp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494D257C6ABF009FFE69 /* exp.cpp */; };
+		9E894992257C6AC0009FFE69 /* itrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494E257C6ABF009FFE69 /* itrans.cpp */; };
+		9E894993257C6AC0009FFE69 /* itrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89494E257C6ABF009FFE69 /* itrans.cpp */; };
+		9E894994257C6AC0009FFE69 /* itransh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894950257C6ABF009FFE69 /* itransh.cpp */; };
+		9E894995257C6AC0009FFE69 /* itransh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894950257C6ABF009FFE69 /* itransh.cpp */; };
+		9E894996257C6AC0009FFE69 /* trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894951257C6ABF009FFE69 /* trans.cpp */; };
+		9E894997257C6AC0009FFE69 /* trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894951257C6ABF009FFE69 /* trans.cpp */; };
+		9E894998257C6AC0009FFE69 /* transh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894952257C6ABF009FFE69 /* transh.cpp */; };
+		9E894999257C6AC0009FFE69 /* transh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894952257C6ABF009FFE69 /* transh.cpp */; };
+		9E89499A257C6AC0009FFE69 /* fact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894954257C6ABF009FFE69 /* fact.cpp */; };
+		9E89499B257C6AC0009FFE69 /* fact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894954257C6ABF009FFE69 /* fact.cpp */; };
+		9E89499C257C6AC0009FFE69 /* rat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894955257C6ABF009FFE69 /* rat.cpp */; };
+		9E89499D257C6AC0009FFE69 /* rat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894955257C6ABF009FFE69 /* rat.cpp */; };
+		9E89499E257C6AC0009FFE69 /* conv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894956257C6ABF009FFE69 /* conv.cpp */; };
+		9E89499F257C6AC0009FFE69 /* conv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894956257C6ABF009FFE69 /* conv.cpp */; };
+		9E8949A0257C6AC0009FFE69 /* support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894958257C6ABF009FFE69 /* support.cpp */; };
+		9E8949A1257C6AC0009FFE69 /* support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894958257C6ABF009FFE69 /* support.cpp */; };
+		9E8949A2257C6AC0009FFE69 /* basex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894959257C6ABF009FFE69 /* basex.cpp */; };
+		9E8949A3257C6AC0009FFE69 /* basex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894959257C6ABF009FFE69 /* basex.cpp */; };
+		9E8949A4257C6AC0009FFE69 /* NumberFormattingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495A257C6ABF009FFE69 /* NumberFormattingUtils.cpp */; };
+		9E8949A5257C6AC0009FFE69 /* NumberFormattingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495A257C6ABF009FFE69 /* NumberFormattingUtils.cpp */; };
+		9E8949A6257C6AC0009FFE69 /* ResourceProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495B257C6ABF009FFE69 /* ResourceProvider.cpp */; };
+		9E8949A7257C6AC0009FFE69 /* ResourceProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495B257C6ABF009FFE69 /* ResourceProvider.cpp */; };
+		9E8949A8257C6AC0009FFE69 /* CalculatorHistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495C257C6ABF009FFE69 /* CalculatorHistory.cpp */; };
+		9E8949A9257C6AC0009FFE69 /* CalculatorHistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495C257C6ABF009FFE69 /* CalculatorHistory.cpp */; };
+		9E8949AA257C6AC0009FFE69 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495E257C6ABF009FFE69 /* pch.cpp */; };
+		9E8949AB257C6AC0009FFE69 /* pch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89495E257C6ABF009FFE69 /* pch.cpp */; };
+		9E8949AC257C6AC0009FFE69 /* CalculatorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894960257C6ABF009FFE69 /* CalculatorManager.cpp */; };
+		9E8949AD257C6AC0009FFE69 /* CalculatorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894960257C6ABF009FFE69 /* CalculatorManager.cpp */; };
+		9E8949AE257C6AC0009FFE69 /* CalculatorDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894961257C6ABF009FFE69 /* CalculatorDisplay.cpp */; };
+		9E8949AF257C6AC0009FFE69 /* CalculatorDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894961257C6ABF009FFE69 /* CalculatorDisplay.cpp */; };
+		9E8949B0257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894966257C6ABF009FFE69 /* EngineResourceProvider.cpp */; };
+		9E8949B1257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894966257C6ABF009FFE69 /* EngineResourceProvider.cpp */; };
+		9E8949B2257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */; };
+		9E8949B3257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */; };
+		9E8949B5257C6AC0009FFE69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89496A257C6ABF009FFE69 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +136,84 @@
 		9E894631257B8018009FFE69 /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		9E894632257B8018009FFE69 /* CustomObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomObject.mm; sourceTree = "<group>"; };
 		9E89467A257B9744009FFE69 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
-		9E894698257BD498009FFE69 /* cmoc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmoc; sourceTree = "<group>"; };
+		9E894708257BF027009FFE69 /* BridgeOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeOne.h; sourceTree = "<group>"; };
+		9E894709257BF027009FFE69 /* BridgeOne.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeOne.mm; sourceTree = "<group>"; };
+		9E894773257C637E009FFE69 /* TempCPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TempCPP.cpp; sourceTree = "<group>"; };
+		9E894774257C637E009FFE69 /* TempCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TempCPP.hpp; sourceTree = "<group>"; };
+		9E89477F257C65DB009FFE69 /* Temp2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Temp2.cpp; sourceTree = "<group>"; };
+		9E894780257C65DB009FFE69 /* Temp2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Temp2.hpp; sourceTree = "<group>"; };
+		9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandardCalculatorViewModel.cpp; sourceTree = "<group>"; };
+		9E894923257C6ABF009FFE69 /* UnitConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnitConverter.cpp; sourceTree = "<group>"; };
+		9E894924257C6ABF009FFE69 /* ExpressionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionCommand.h; sourceTree = "<group>"; };
+		9E894925257C6ABF009FFE69 /* CalculatorResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorResource.h; sourceTree = "<group>"; };
+		9E894926257C6ABF009FFE69 /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pch.h; sourceTree = "<group>"; };
+		9E894927257C6ABF009FFE69 /* winerror_cross_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winerror_cross_platform.h; sourceTree = "<group>"; };
+		9E894929257C6ABF009FFE69 /* Rational.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rational.cpp; sourceTree = "<group>"; };
+		9E89492A257C6ABF009FFE69 /* IHistoryDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHistoryDisplay.h; sourceTree = "<group>"; };
+		9E89492B257C6ABF009FFE69 /* CalcUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalcUtils.cpp; sourceTree = "<group>"; };
+		9E89492C257C6ABF009FFE69 /* CalcInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalcInput.cpp; sourceTree = "<group>"; };
+		9E89492D257C6ABF009FFE69 /* CalcInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcInput.h; sourceTree = "<group>"; };
+		9E89492E257C6ABF009FFE69 /* RationalMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RationalMath.h; sourceTree = "<group>"; };
+		9E89492F257C6ABF009FFE69 /* Rational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rational.h; sourceTree = "<group>"; };
+		9E894930257C6ABF009FFE69 /* CalcUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcUtils.h; sourceTree = "<group>"; };
+		9E894931257C6ABF009FFE69 /* RadixType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadixType.h; sourceTree = "<group>"; };
+		9E894932257C6ABF009FFE69 /* History.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = History.cpp; sourceTree = "<group>"; };
+		9E894933257C6ABF009FFE69 /* scifunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scifunc.cpp; sourceTree = "<group>"; };
+		9E894934257C6ABF009FFE69 /* calc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = calc.cpp; sourceTree = "<group>"; };
+		9E894935257C6ABF009FFE69 /* RationalMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RationalMath.cpp; sourceTree = "<group>"; };
+		9E894936257C6ABF009FFE69 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		9E894937257C6ABF009FFE69 /* scidisp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scidisp.cpp; sourceTree = "<group>"; };
+		9E894938257C6ABF009FFE69 /* scioper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scioper.cpp; sourceTree = "<group>"; };
+		9E894939257C6ABF009FFE69 /* CalcEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcEngine.h; sourceTree = "<group>"; };
+		9E89493A257C6ABF009FFE69 /* sciset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sciset.cpp; sourceTree = "<group>"; };
+		9E89493B257C6ABF009FFE69 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		9E89493C257C6ABF009FFE69 /* scicomm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scicomm.cpp; sourceTree = "<group>"; };
+		9E89493D257C6ABF009FFE69 /* ICalcDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICalcDisplay.h; sourceTree = "<group>"; };
+		9E89493E257C6ABF009FFE69 /* Number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Number.cpp; sourceTree = "<group>"; };
+		9E89493F257C6ABF009FFE69 /* CCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCommand.h; sourceTree = "<group>"; };
+		9E894940257C6ABF009FFE69 /* EngineStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineStrings.h; sourceTree = "<group>"; };
+		9E894941257C6ABF009FFE69 /* ResourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceProvider.h; sourceTree = "<group>"; };
+		9E894942257C6ABF009FFE69 /* BitLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitLength.h; sourceTree = "<group>"; };
+		9E894943257C6ABF009FFE69 /* MainAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAdaptor.h; sourceTree = "<group>"; };
+		9E894944257C6ABF009FFE69 /* CalculatorHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorHistory.h; sourceTree = "<group>"; };
+		9E894945257C6ABF009FFE69 /* ExpressionCommandInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionCommandInterface.h; sourceTree = "<group>"; };
+		9E894946257C6ABF009FFE69 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		9E894947257C6ABF009FFE69 /* ExpressionCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExpressionCommand.cpp; sourceTree = "<group>"; };
+		9E894948257C6ABF009FFE69 /* CalculatorDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorDisplay.h; sourceTree = "<group>"; };
+		9E894949257C6ABF009FFE69 /* StringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtils.cpp; sourceTree = "<group>"; };
+		9E89494B257C6ABF009FFE69 /* num.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = num.cpp; sourceTree = "<group>"; };
+		9E89494C257C6ABF009FFE69 /* logic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logic.cpp; sourceTree = "<group>"; };
+		9E89494D257C6ABF009FFE69 /* exp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exp.cpp; sourceTree = "<group>"; };
+		9E89494E257C6ABF009FFE69 /* itrans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = itrans.cpp; sourceTree = "<group>"; };
+		9E89494F257C6ABF009FFE69 /* CalcErr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcErr.h; sourceTree = "<group>"; };
+		9E894950257C6ABF009FFE69 /* itransh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = itransh.cpp; sourceTree = "<group>"; };
+		9E894951257C6ABF009FFE69 /* trans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trans.cpp; sourceTree = "<group>"; };
+		9E894952257C6ABF009FFE69 /* transh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transh.cpp; sourceTree = "<group>"; };
+		9E894953257C6ABF009FFE69 /* ratconst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ratconst.h; sourceTree = "<group>"; };
+		9E894954257C6ABF009FFE69 /* fact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fact.cpp; sourceTree = "<group>"; };
+		9E894955257C6ABF009FFE69 /* rat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rat.cpp; sourceTree = "<group>"; };
+		9E894956257C6ABF009FFE69 /* conv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = conv.cpp; sourceTree = "<group>"; };
+		9E894957257C6ABF009FFE69 /* ratpak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ratpak.h; sourceTree = "<group>"; };
+		9E894958257C6ABF009FFE69 /* support.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = support.cpp; sourceTree = "<group>"; };
+		9E894959257C6ABF009FFE69 /* basex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basex.cpp; sourceTree = "<group>"; };
+		9E89495A257C6ABF009FFE69 /* NumberFormattingUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NumberFormattingUtils.cpp; sourceTree = "<group>"; };
+		9E89495B257C6ABF009FFE69 /* ResourceProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceProvider.cpp; sourceTree = "<group>"; };
+		9E89495C257C6ABF009FFE69 /* CalculatorHistory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculatorHistory.cpp; sourceTree = "<group>"; };
+		9E89495D257C6ABF009FFE69 /* StandardCalculatorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardCalculatorViewModel.h; sourceTree = "<group>"; };
+		9E89495E257C6ABF009FFE69 /* pch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pch.cpp; sourceTree = "<group>"; };
+		9E89495F257C6ABF009FFE69 /* CalculatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorManager.h; sourceTree = "<group>"; };
+		9E894960257C6ABF009FFE69 /* CalculatorManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculatorManager.cpp; sourceTree = "<group>"; };
+		9E894961257C6ABF009FFE69 /* CalculatorDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculatorDisplay.cpp; sourceTree = "<group>"; };
+		9E894962257C6ABF009FFE69 /* CalculatorVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorVector.h; sourceTree = "<group>"; };
+		9E894963257C6ABF009FFE69 /* EngineResourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineResourceProvider.h; sourceTree = "<group>"; };
+		9E894964257C6ABF009FFE69 /* CalculatorButtonUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorButtonUser.h; sourceTree = "<group>"; };
+		9E894965257C6ABF009FFE69 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		9E894966257C6ABF009FFE69 /* EngineResourceProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineResourceProvider.cpp; sourceTree = "<group>"; };
+		9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainAdaptor.cpp; sourceTree = "<group>"; };
+		9E894968257C6ABF009FFE69 /* UnitConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitConverter.h; sourceTree = "<group>"; };
+		9E894969257C6ABF009FFE69 /* NumberFormattingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberFormattingUtils.h; sourceTree = "<group>"; };
+		9E89496A257C6ABF009FFE69 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9E89496B257C6ABF009FFE69 /* NumberBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +263,8 @@
 		9E89454F25738CE6009FFE69 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9E894921257C6ABF009FFE69 /* CM */,
 				9E89469F257BD537009FFE69 /* bridges */,
-				9E894698257BD498009FFE69 /* cmoc */,
 				9E89455025738CE6009FFE69 /* RealCalculatorApp.swift */,
 				9E89455125738CE6009FFE69 /* ContentView.swift */,
 				9E89455225738CE9009FFE69 /* Assets.xcassets */,
@@ -118,6 +272,10 @@
 				9E894632257B8018009FFE69 /* CustomObject.mm */,
 				9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */,
 				9E89467A257B9744009FFE69 /* TestSwift.swift */,
+				9E894773257C637E009FFE69 /* TempCPP.cpp */,
+				9E894774257C637E009FFE69 /* TempCPP.hpp */,
+				9E89477F257C65DB009FFE69 /* Temp2.cpp */,
+				9E894780257C65DB009FFE69 /* Temp2.hpp */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -171,8 +329,105 @@
 		9E89469F257BD537009FFE69 /* bridges */ = {
 			isa = PBXGroup;
 			children = (
+				9E894708257BF027009FFE69 /* BridgeOne.h */,
+				9E894709257BF027009FFE69 /* BridgeOne.mm */,
 			);
 			path = bridges;
+			sourceTree = "<group>";
+		};
+		9E894921257C6ABF009FFE69 /* CM */ = {
+			isa = PBXGroup;
+			children = (
+				9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */,
+				9E894923257C6ABF009FFE69 /* UnitConverter.cpp */,
+				9E894924257C6ABF009FFE69 /* ExpressionCommand.h */,
+				9E894925257C6ABF009FFE69 /* CalculatorResource.h */,
+				9E894926257C6ABF009FFE69 /* pch.h */,
+				9E894927257C6ABF009FFE69 /* winerror_cross_platform.h */,
+				9E894928257C6ABF009FFE69 /* CEngine */,
+				9E894941257C6ABF009FFE69 /* ResourceProvider.h */,
+				9E894942257C6ABF009FFE69 /* BitLength.h */,
+				9E894943257C6ABF009FFE69 /* MainAdaptor.h */,
+				9E894944257C6ABF009FFE69 /* CalculatorHistory.h */,
+				9E894945257C6ABF009FFE69 /* ExpressionCommandInterface.h */,
+				9E894946257C6ABF009FFE69 /* StringUtils.h */,
+				9E894947257C6ABF009FFE69 /* ExpressionCommand.cpp */,
+				9E894948257C6ABF009FFE69 /* CalculatorDisplay.h */,
+				9E894949257C6ABF009FFE69 /* StringUtils.cpp */,
+				9E89494A257C6ABF009FFE69 /* Ratpack */,
+				9E89495A257C6ABF009FFE69 /* NumberFormattingUtils.cpp */,
+				9E89495B257C6ABF009FFE69 /* ResourceProvider.cpp */,
+				9E89495C257C6ABF009FFE69 /* CalculatorHistory.cpp */,
+				9E89495D257C6ABF009FFE69 /* StandardCalculatorViewModel.h */,
+				9E89495E257C6ABF009FFE69 /* pch.cpp */,
+				9E89495F257C6ABF009FFE69 /* CalculatorManager.h */,
+				9E894960257C6ABF009FFE69 /* CalculatorManager.cpp */,
+				9E894961257C6ABF009FFE69 /* CalculatorDisplay.cpp */,
+				9E894962257C6ABF009FFE69 /* CalculatorVector.h */,
+				9E894963257C6ABF009FFE69 /* EngineResourceProvider.h */,
+				9E894964257C6ABF009FFE69 /* CalculatorButtonUser.h */,
+				9E894965257C6ABF009FFE69 /* Command.h */,
+				9E894966257C6ABF009FFE69 /* EngineResourceProvider.cpp */,
+				9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */,
+				9E894968257C6ABF009FFE69 /* UnitConverter.h */,
+				9E894969257C6ABF009FFE69 /* NumberFormattingUtils.h */,
+				9E89496A257C6ABF009FFE69 /* main.cpp */,
+				9E89496B257C6ABF009FFE69 /* NumberBase.h */,
+			);
+			path = CM;
+			sourceTree = "<group>";
+		};
+		9E894928257C6ABF009FFE69 /* CEngine */ = {
+			isa = PBXGroup;
+			children = (
+				9E894929257C6ABF009FFE69 /* Rational.cpp */,
+				9E89492A257C6ABF009FFE69 /* IHistoryDisplay.h */,
+				9E89492B257C6ABF009FFE69 /* CalcUtils.cpp */,
+				9E89492C257C6ABF009FFE69 /* CalcInput.cpp */,
+				9E89492D257C6ABF009FFE69 /* CalcInput.h */,
+				9E89492E257C6ABF009FFE69 /* RationalMath.h */,
+				9E89492F257C6ABF009FFE69 /* Rational.h */,
+				9E894930257C6ABF009FFE69 /* CalcUtils.h */,
+				9E894931257C6ABF009FFE69 /* RadixType.h */,
+				9E894932257C6ABF009FFE69 /* History.cpp */,
+				9E894933257C6ABF009FFE69 /* scifunc.cpp */,
+				9E894934257C6ABF009FFE69 /* calc.cpp */,
+				9E894935257C6ABF009FFE69 /* RationalMath.cpp */,
+				9E894936257C6ABF009FFE69 /* History.h */,
+				9E894937257C6ABF009FFE69 /* scidisp.cpp */,
+				9E894938257C6ABF009FFE69 /* scioper.cpp */,
+				9E894939257C6ABF009FFE69 /* CalcEngine.h */,
+				9E89493A257C6ABF009FFE69 /* sciset.cpp */,
+				9E89493B257C6ABF009FFE69 /* Number.h */,
+				9E89493C257C6ABF009FFE69 /* scicomm.cpp */,
+				9E89493D257C6ABF009FFE69 /* ICalcDisplay.h */,
+				9E89493E257C6ABF009FFE69 /* Number.cpp */,
+				9E89493F257C6ABF009FFE69 /* CCommand.h */,
+				9E894940257C6ABF009FFE69 /* EngineStrings.h */,
+			);
+			path = CEngine;
+			sourceTree = "<group>";
+		};
+		9E89494A257C6ABF009FFE69 /* Ratpack */ = {
+			isa = PBXGroup;
+			children = (
+				9E89494B257C6ABF009FFE69 /* num.cpp */,
+				9E89494C257C6ABF009FFE69 /* logic.cpp */,
+				9E89494D257C6ABF009FFE69 /* exp.cpp */,
+				9E89494E257C6ABF009FFE69 /* itrans.cpp */,
+				9E89494F257C6ABF009FFE69 /* CalcErr.h */,
+				9E894950257C6ABF009FFE69 /* itransh.cpp */,
+				9E894951257C6ABF009FFE69 /* trans.cpp */,
+				9E894952257C6ABF009FFE69 /* transh.cpp */,
+				9E894953257C6ABF009FFE69 /* ratconst.h */,
+				9E894954257C6ABF009FFE69 /* fact.cpp */,
+				9E894955257C6ABF009FFE69 /* rat.cpp */,
+				9E894956257C6ABF009FFE69 /* conv.cpp */,
+				9E894957257C6ABF009FFE69 /* ratpak.h */,
+				9E894958257C6ABF009FFE69 /* support.cpp */,
+				9E894959257C6ABF009FFE69 /* basex.cpp */,
+			);
+			path = Ratpack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +556,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E894699257BD498009FFE69 /* cmoc in Resources */,
 				9E89457D25738CE9009FFE69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +564,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E89469A257BD498009FFE69 /* cmoc in Resources */,
 				9E89457E25738CE9009FFE69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,10 +589,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E89498C257C6AC0009FFE69 /* num.cpp in Sources */,
+				9E894996257C6AC0009FFE69 /* trans.cpp in Sources */,
+				9E8949A2257C6AC0009FFE69 /* basex.cpp in Sources */,
 				9E89457B25738CE9009FFE69 /* ContentView.swift in Sources */,
+				9E8949B0257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */,
+				9E89499A257C6AC0009FFE69 /* fact.cpp in Sources */,
 				9E894633257B8018009FFE69 /* CustomObject.mm in Sources */,
+				9E89499E257C6AC0009FFE69 /* conv.cpp in Sources */,
 				9E89457925738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
+				9E894984257C6AC0009FFE69 /* scicomm.cpp in Sources */,
+				9E894980257C6AC0009FFE69 /* scioper.cpp in Sources */,
+				9E8949A6257C6AC0009FFE69 /* ResourceProvider.cpp in Sources */,
+				9E8949A0257C6AC0009FFE69 /* support.cpp in Sources */,
+				9E8949AA257C6AC0009FFE69 /* pch.cpp in Sources */,
+				9E894970257C6AC0009FFE69 /* Rational.cpp in Sources */,
+				9E894986257C6AC0009FFE69 /* Number.cpp in Sources */,
+				9E89496E257C6AC0009FFE69 /* UnitConverter.cpp in Sources */,
+				9E894994257C6AC0009FFE69 /* itransh.cpp in Sources */,
+				9E89497C257C6AC0009FFE69 /* RationalMath.cpp in Sources */,
+				9E89498A257C6AC0009FFE69 /* StringUtils.cpp in Sources */,
+				9E89498E257C6AC0009FFE69 /* logic.cpp in Sources */,
+				9E89478A257C665F009FFE69 /* Temp2.cpp in Sources */,
 				9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */,
+				9E894972257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
+				9E89497A257C6AC0009FFE69 /* calc.cpp in Sources */,
+				9E89470A257BF027009FFE69 /* BridgeOne.mm in Sources */,
+				9E894974257C6AC0009FFE69 /* CalcInput.cpp in Sources */,
+				9E894988257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */,
+				9E894990257C6AC0009FFE69 /* exp.cpp in Sources */,
+				9E894976257C6AC0009FFE69 /* History.cpp in Sources */,
+				9E8949A4257C6AC0009FFE69 /* NumberFormattingUtils.cpp in Sources */,
+				9E8949B2257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */,
+				9E894978257C6AC0009FFE69 /* scifunc.cpp in Sources */,
+				9E8949A8257C6AC0009FFE69 /* CalculatorHistory.cpp in Sources */,
+				9E894982257C6AC0009FFE69 /* sciset.cpp in Sources */,
+				9E894992257C6AC0009FFE69 /* itrans.cpp in Sources */,
+				9E894775257C637E009FFE69 /* TempCPP.cpp in Sources */,
+				9E8949AC257C6AC0009FFE69 /* CalculatorManager.cpp in Sources */,
+				9E894998257C6AC0009FFE69 /* transh.cpp in Sources */,
+				9E89496C257C6AC0009FFE69 /* StandardCalculatorViewModel.cpp in Sources */,
+				9E89497E257C6AC0009FFE69 /* scidisp.cpp in Sources */,
+				9E89499C257C6AC0009FFE69 /* rat.cpp in Sources */,
+				9E8949AE257C6AC0009FFE69 /* CalculatorDisplay.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +639,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E89498D257C6AC0009FFE69 /* num.cpp in Sources */,
+				9E894997257C6AC0009FFE69 /* trans.cpp in Sources */,
+				9E8949A3257C6AC0009FFE69 /* basex.cpp in Sources */,
 				9E89457C25738CE9009FFE69 /* ContentView.swift in Sources */,
+				9E8949B1257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */,
+				9E89499B257C6AC0009FFE69 /* fact.cpp in Sources */,
 				9E894634257B8018009FFE69 /* CustomObject.mm in Sources */,
+				9E89499F257C6AC0009FFE69 /* conv.cpp in Sources */,
 				9E89457A25738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
+				9E894985257C6AC0009FFE69 /* scicomm.cpp in Sources */,
+				9E894981257C6AC0009FFE69 /* scioper.cpp in Sources */,
+				9E8949A7257C6AC0009FFE69 /* ResourceProvider.cpp in Sources */,
+				9E8949A1257C6AC0009FFE69 /* support.cpp in Sources */,
+				9E8949AB257C6AC0009FFE69 /* pch.cpp in Sources */,
+				9E894971257C6AC0009FFE69 /* Rational.cpp in Sources */,
+				9E894987257C6AC0009FFE69 /* Number.cpp in Sources */,
+				9E89496F257C6AC0009FFE69 /* UnitConverter.cpp in Sources */,
+				9E894995257C6AC0009FFE69 /* itransh.cpp in Sources */,
+				9E89497D257C6AC0009FFE69 /* RationalMath.cpp in Sources */,
+				9E89498B257C6AC0009FFE69 /* StringUtils.cpp in Sources */,
+				9E89498F257C6AC0009FFE69 /* logic.cpp in Sources */,
+				9E89478F257C665F009FFE69 /* Temp2.cpp in Sources */,
 				9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */,
+				9E894973257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
+				9E89497B257C6AC0009FFE69 /* calc.cpp in Sources */,
+				9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */,
+				9E8949B5257C6AC0009FFE69 /* main.cpp in Sources */,
+				9E894975257C6AC0009FFE69 /* CalcInput.cpp in Sources */,
+				9E894989257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */,
+				9E894991257C6AC0009FFE69 /* exp.cpp in Sources */,
+				9E894977257C6AC0009FFE69 /* History.cpp in Sources */,
+				9E8949A5257C6AC0009FFE69 /* NumberFormattingUtils.cpp in Sources */,
+				9E8949B3257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */,
+				9E894979257C6AC0009FFE69 /* scifunc.cpp in Sources */,
+				9E8949A9257C6AC0009FFE69 /* CalculatorHistory.cpp in Sources */,
+				9E894983257C6AC0009FFE69 /* sciset.cpp in Sources */,
+				9E894993257C6AC0009FFE69 /* itrans.cpp in Sources */,
+				9E894776257C637E009FFE69 /* TempCPP.cpp in Sources */,
+				9E8949AD257C6AC0009FFE69 /* CalculatorManager.cpp in Sources */,
+				9E894999257C6AC0009FFE69 /* transh.cpp in Sources */,
+				9E89496D257C6AC0009FFE69 /* StandardCalculatorViewModel.cpp in Sources */,
+				9E89497F257C6AC0009FFE69 /* scidisp.cpp in Sources */,
+				9E89499D257C6AC0009FFE69 /* rat.cpp in Sources */,
+				9E8949AF257C6AC0009FFE69 /* CalculatorDisplay.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,9 +769,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = Shared/CM;
+				INCLUDED_SOURCE_FILE_NAMES = Shared/CM/CEngine/History.cpp;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -490,8 +827,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = Shared/CM;
+				INCLUDED_SOURCE_FILE_NAMES = Shared/CM/CEngine/History.cpp;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -502,21 +844,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5E8FU89THK;
 				ENABLE_PREVIEWS = YES;
-				HEADER_SEARCH_PATHS = "Shared/cmoc/**";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "Shared/CM/**";
+				INCLUDED_SOURCE_FILE_NAMES = "";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"-pedantic",
+					"-std=c99",
+					"-Wc99-extensions",
+				);
+				OTHER_CPLUSPLUSFLAGS = "-pedantic";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "Shared/CM/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME:c99extidentifier)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -530,21 +882,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5E8FU89THK;
 				ENABLE_PREVIEWS = YES;
-				HEADER_SEARCH_PATHS = "Shared/cmoc/**";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "Shared/CM/**";
+				INCLUDED_SOURCE_FILE_NAMES = "";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"-pedantic",
+					"-std=c99",
+					"-Wc99-extensions",
+				);
+				OTHER_CPLUSPLUSFLAGS = "-pedantic";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "Shared/CM/**";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME:c99extidentifier)-Swift.h";
 				SWIFT_VERSION = 5.0;
