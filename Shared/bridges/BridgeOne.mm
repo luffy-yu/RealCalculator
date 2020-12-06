@@ -46,4 +46,5 @@ void call_cpp()
         send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Four);
         send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Five);
         send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Equals);
+    std::cout << "done" << std::endl;
 }

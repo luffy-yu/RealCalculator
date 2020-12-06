@@ -859,12 +859,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = (
-					"-pedantic",
-					"-std=c99",
-					"-Wc99-extensions",
-				);
-				OTHER_CPLUSPLUSFLAGS = "-pedantic";
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
@@ -897,12 +893,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_CFLAGS = (
-					"-pedantic",
-					"-std=c99",
-					"-Wc99-extensions",
-				);
-				OTHER_CPLUSPLUSFLAGS = "-pedantic";
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chuange.RealCalculator;
 				PRODUCT_NAME = RealCalculator;
 				SDKROOT = iphoneos;
