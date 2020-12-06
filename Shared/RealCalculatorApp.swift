@@ -11,7 +11,8 @@ import SwiftUI
 struct RealCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            NormalUIView()
+//            NormalUIView()
+            ContentView()
         }
     }
 }

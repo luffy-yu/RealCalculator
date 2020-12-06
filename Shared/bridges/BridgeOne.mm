@@ -7,8 +7,6 @@
 
 #include <iostream>
 #import "BridgeOne.h"
-#import "../TempCPP.hpp"
-#import "../Temp2.hpp"
 #import "../CM/MainAdaptor.h"
 #include "ResourceProvider.h"
 #include "CalculatorManager.h"
@@ -17,6 +15,7 @@
 #include "EngineResourceProvider.h"
 #include "CalculatorResource.h"
 #include "CEngine/History.h"
+#include "BridgeCalculatorDisplay.h"
 
 using namespace std;
 using std::cout;
@@ -33,18 +32,18 @@ using namespace CalculatorApp;
 void call_cpp()
 {
     std::cout << "from bridge one" << std::endl;
-    TempCPP::get_name();
-    Temp2::get_id();
-        CalculatorDisplay m_calculatorDisplay;
-        EngineResourceProvider m_resourceProvider;
-        CalculatorManager m_standardCalculatorManager(&m_calculatorDisplay, &m_resourceProvider);
-        //m_calculatorDisplay.SetCallback(calculatorViewModel);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::IsStandardMode);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Two);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Add);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Three);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Four);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Five);
-        send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Equals);
+    
+    [BridgeCalculatorDisplay SetPrimaryDisplay:NULL];
+    CalculatorDisplay m_calculatorDisplay;
+    EngineResourceProvider m_resourceProvider;
+    CalculatorManager m_standardCalculatorManager(&m_calculatorDisplay, &m_resourceProvider);
+    //m_calculatorDisplay.SetCallback(calculatorViewModel);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::IsStandardMode);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Two);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Add);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Three);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Four);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Five);
+    send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Equals);
     std::cout << "done" << std::endl;
 }
