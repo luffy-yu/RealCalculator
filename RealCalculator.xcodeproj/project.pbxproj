@@ -98,6 +98,8 @@
 		9E8949B2257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */; };
 		9E8949B3257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894967257C6ABF009FFE69 /* MainAdaptor.cpp */; };
 		9E8949B5257C6AC0009FFE69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E89496A257C6ABF009FFE69 /* main.cpp */; };
+		9E894A63257CB803009FFE69 /* NormalUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894A62257CB803009FFE69 /* NormalUIView.swift */; };
+		9E894A64257CB803009FFE69 /* NormalUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894A62257CB803009FFE69 /* NormalUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +216,7 @@
 		9E894969257C6ABF009FFE69 /* NumberFormattingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberFormattingUtils.h; sourceTree = "<group>"; };
 		9E89496A257C6ABF009FFE69 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9E89496B257C6ABF009FFE69 /* NumberBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberBase.h; sourceTree = "<group>"; };
+		9E894A62257CB803009FFE69 /* NormalUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +279,7 @@
 				9E894774257C637E009FFE69 /* TempCPP.hpp */,
 				9E89477F257C65DB009FFE69 /* Temp2.cpp */,
 				9E894780257C65DB009FFE69 /* Temp2.hpp */,
+				9E894A62257CB803009FFE69 /* NormalUIView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -612,6 +616,7 @@
 				9E89498E257C6AC0009FFE69 /* logic.cpp in Sources */,
 				9E89478A257C665F009FFE69 /* Temp2.cpp in Sources */,
 				9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */,
+				9E894A63257CB803009FFE69 /* NormalUIView.swift in Sources */,
 				9E894972257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
 				9E89497A257C6AC0009FFE69 /* calc.cpp in Sources */,
 				9E89470A257BF027009FFE69 /* BridgeOne.mm in Sources */,
@@ -670,6 +675,7 @@
 				9E894989257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */,
 				9E894991257C6AC0009FFE69 /* exp.cpp in Sources */,
 				9E894977257C6AC0009FFE69 /* History.cpp in Sources */,
+				9E894A64257CB803009FFE69 /* NormalUIView.swift in Sources */,
 				9E8949A5257C6AC0009FFE69 /* NumberFormattingUtils.cpp in Sources */,
 				9E8949B3257C6AC0009FFE69 /* MainAdaptor.cpp in Sources */,
 				9E894979257C6AC0009FFE69 /* scifunc.cpp in Sources */,
