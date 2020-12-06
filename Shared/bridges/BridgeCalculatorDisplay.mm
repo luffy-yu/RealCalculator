@@ -17,10 +17,10 @@
 //    return ins;
     printf("call getInstance");
     static CalculatorDisplay *m_calculatorDisplay = NULL;
-    if (!m_calculatorDisplay){
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
         m_calculatorDisplay = new CalculatorDisplay();
-    }
-    
+    });
     return m_calculatorDisplay;
 }
 
