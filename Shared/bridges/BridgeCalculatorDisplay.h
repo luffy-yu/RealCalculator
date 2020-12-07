@@ -6,15 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "CalculatorDisplay.h"
-
-using namespace CalculatorApp;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BridgeCalculatorDisplay : NSObject
-+(CalculatorDisplay*) getInstance;
-+(void) SetPrimaryDisplay: (NSString*) str;
++(BridgeCalculatorDisplay*) getInstance;
+-(void) SetPrimaryDisplay: (NSString*) str isError: (BOOL) flag;
 @end
 
 NS_ASSUME_NONNULL_END

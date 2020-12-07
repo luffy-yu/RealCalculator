@@ -33,11 +33,17 @@ void call_cpp()
 {
     std::cout << "from bridge one" << std::endl;
     
-    [BridgeCalculatorDisplay SetPrimaryDisplay:NULL];
+//    [BridgeCalculatorDisplay SetPrimaryDisplay:NULL];
     CalculatorDisplay m_calculatorDisplay;
     EngineResourceProvider m_resourceProvider;
     CalculatorManager m_standardCalculatorManager(&m_calculatorDisplay, &m_resourceProvider);
-    //m_calculatorDisplay.SetCallback(calculatorViewModel);
+    
+    CalculatorDisplayCallBack *display = new CalculatorDisplayCallBack();
+//    CalculatorDisplayCallBack callback;
+    m_calculatorDisplay.SetCallback(display);
+    
+    
+    
     send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::IsStandardMode);
     send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Two);
     send_command(m_standardCalculatorManager, NumbersAndOperatorsEnum::Add);

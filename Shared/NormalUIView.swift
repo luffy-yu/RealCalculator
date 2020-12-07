@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-func btn_clicked() -> Void {
-    print("clicked")
-}
-
 let color_light_gray:Color =
     Color(.sRGB, red: 0.1, green: 0.1, blue: 0.1, opacity: 1.0)
     
@@ -42,13 +38,20 @@ func get_color_by_str(_ name: String) -> Color
 let hstack_space:CGFloat = 5
 let vstack_space:CGFloat = 5
 
+let pds = PrimaryDisplaySetter.getInstance();
+let primaryDisplay = PrimaryDisplay(setter: pds, width: UIScreen.main.bounds.size.width)
+
 struct CustomButton : View {
     let title: String
     let width: CGFloat
     let height: CGFloat
     let bg: Color
     var body: some View{
-        Button(action: btn_clicked){
+        Button(action: {
+//            pds.set_value(s: self.title)
+            var co: CustomObject = CustomObject()
+            co.get_number(10)
+        }){
             Text(title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .font(.system(.largeTitle, design: .monospaced))
@@ -84,6 +87,8 @@ struct HStackButtons: View {
 
 struct NormalUIView: View {
     
+//    @State public var primary_text: String = "10"
+    
     let screenSize: CGRect = UIScreen.main.bounds
     
     let available_width = UIScreen.main.bounds.size.width
@@ -112,15 +117,16 @@ struct NormalUIView: View {
     
     var body: some View {
         LazyHGrid(rows: rows, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: hstack_space, pinnedViews: /*@START_MENU_TOKEN@*/[]/*@END_MENU_TOKEN@*/, content: {
-            Text("1 + 2")
+            Text("2 + 345")
                 .frame(width: available_width, height: nil, alignment: .trailing)
                 .padding(.trailing, 10)
                 .foregroundColor(Color.gray)
                 .font(.system(size: 60))
-            Text("0").frame(width: available_width, height: nil, alignment: .trailing)
-                .padding(.trailing, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color.white)
-                .font(.system(size: 100))
+//            Text(self.primary_text).frame(width: available_width, height: nil, alignment: .trailing)
+//                .padding(.trailing, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+//                .foregroundColor(Color.white)
+//                .font(.system(size: 100))
+            primaryDisplay
             HStackButtons(buttons: btns4, height: btn_height, width: btn_width)
             HStackButtons(buttons: btns3, height: btn_height, width: btn_width)
             HStackButtons(buttons: btns2, height: btn_height, width: btn_width)

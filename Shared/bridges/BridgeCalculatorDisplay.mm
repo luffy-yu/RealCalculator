@@ -6,33 +6,23 @@
 //
 
 #import "BridgeCalculatorDisplay.h"
+#include "RealCalculator-Swift.h"
 
 @implementation BridgeCalculatorDisplay
 
-+ (CalculatorDisplay*)getInstance {
-//    static BridgeCalculatorDisplay *ins = NULL;
-//    if (!ins){
-//        ins = [[self alloc] init];
-//    }
-//    return ins;
-    printf("call getInstance");
-    static CalculatorDisplay *m_calculatorDisplay = NULL;
++ (BridgeCalculatorDisplay*)getInstance {
+    static BridgeCalculatorDisplay *m_calculatorDisplay = NULL;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        m_calculatorDisplay = new CalculatorDisplay();
+        m_calculatorDisplay = [[self alloc] init];
     });
     return m_calculatorDisplay;
 }
 
-+(void) SetPrimaryDisplay: (NSString*) str
+-(void) SetPrimaryDisplay: (NSString*) str isError: (BOOL) flag
 {
-    CalculatorDisplay *dis = [BridgeCalculatorDisplay getInstance];
-    dis->SetCallback();
     printf("from oc SetPrimaryDisplay");
+    PrimaryDisplaySetter *pds = [PrimaryDisplaySetter getInstance];
+    [pds set_valueWithS:str];
 }
 @end
-
-//#pragma mark -
-
-
-

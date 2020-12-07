@@ -14,3 +14,11 @@ class MyClass: NSObject {
         return s
     }
 }
+
+@objcMembers
+class MyClass2: NSObject {
+    func get_name() -> String {
+        var s:String = "haha"
+        return s
+    }
+}
