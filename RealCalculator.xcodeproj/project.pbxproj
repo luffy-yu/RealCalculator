@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E04231B257FD503004BAC83 /* BridgeCalculatorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E04231A257FD503004BAC83 /* BridgeCalculatorManager.mm */; };
+		9E04231C257FD503004BAC83 /* BridgeCalculatorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E04231A257FD503004BAC83 /* BridgeCalculatorManager.mm */; };
+		9E042327257FD533004BAC83 /* BridgeEngineResourceProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E042326257FD533004BAC83 /* BridgeEngineResourceProvider.mm */; };
+		9E042328257FD533004BAC83 /* BridgeEngineResourceProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E042326257FD533004BAC83 /* BridgeEngineResourceProvider.mm */; };
 		9E89456C25738CE9009FFE69 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89456B25738CE9009FFE69 /* Tests_iOS.swift */; };
 		9E89457725738CE9009FFE69 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89457625738CE9009FFE69 /* Tests_macOS.swift */; };
 		9E89457925738CE9009FFE69 /* RealCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89455025738CE6009FFE69 /* RealCalculatorApp.swift */; };
@@ -122,6 +126,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E042319257FD503004BAC83 /* BridgeCalculatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeCalculatorManager.h; sourceTree = "<group>"; };
+		9E04231A257FD503004BAC83 /* BridgeCalculatorManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeCalculatorManager.mm; sourceTree = "<group>"; };
+		9E042325257FD533004BAC83 /* BridgeEngineResourceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeEngineResourceProvider.h; sourceTree = "<group>"; };
+		9E042326257FD533004BAC83 /* BridgeEngineResourceProvider.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeEngineResourceProvider.mm; sourceTree = "<group>"; };
 		9E89455025738CE6009FFE69 /* RealCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealCalculatorApp.swift; sourceTree = "<group>"; };
 		9E89455125738CE6009FFE69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9E89455225738CE9009FFE69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -339,6 +347,10 @@
 				9E894709257BF027009FFE69 /* BridgeOne.mm */,
 				9E894A69257D34F6009FFE69 /* BridgeCalculatorDisplay.h */,
 				9E894A6A257D34F6009FFE69 /* BridgeCalculatorDisplay.mm */,
+				9E042319257FD503004BAC83 /* BridgeCalculatorManager.h */,
+				9E04231A257FD503004BAC83 /* BridgeCalculatorManager.mm */,
+				9E042325257FD533004BAC83 /* BridgeEngineResourceProvider.h */,
+				9E042326257FD533004BAC83 /* BridgeEngineResourceProvider.mm */,
 			);
 			path = bridges;
 			sourceTree = "<group>";
@@ -611,6 +623,7 @@
 				9E894980257C6AC0009FFE69 /* scioper.cpp in Sources */,
 				9E8949A6257C6AC0009FFE69 /* ResourceProvider.cpp in Sources */,
 				9E8949A0257C6AC0009FFE69 /* support.cpp in Sources */,
+				9E04231B257FD503004BAC83 /* BridgeCalculatorManager.mm in Sources */,
 				9E8949AA257C6AC0009FFE69 /* pch.cpp in Sources */,
 				9E894970257C6AC0009FFE69 /* Rational.cpp in Sources */,
 				9E894986257C6AC0009FFE69 /* Number.cpp in Sources */,
@@ -635,6 +648,7 @@
 				9E894978257C6AC0009FFE69 /* scifunc.cpp in Sources */,
 				9E8949A8257C6AC0009FFE69 /* CalculatorHistory.cpp in Sources */,
 				9E894982257C6AC0009FFE69 /* sciset.cpp in Sources */,
+				9E042327257FD533004BAC83 /* BridgeEngineResourceProvider.mm in Sources */,
 				9E894992257C6AC0009FFE69 /* itrans.cpp in Sources */,
 				9E8949AC257C6AC0009FFE69 /* CalculatorManager.cpp in Sources */,
 				9E894998257C6AC0009FFE69 /* transh.cpp in Sources */,
@@ -676,9 +690,11 @@
 				9E894973257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
 				9E89497B257C6AC0009FFE69 /* calc.cpp in Sources */,
 				9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */,
+				9E04231C257FD503004BAC83 /* BridgeCalculatorManager.mm in Sources */,
 				9E8949B5257C6AC0009FFE69 /* main.cpp in Sources */,
 				9E894975257C6AC0009FFE69 /* CalcInput.cpp in Sources */,
 				9E894AB3257E7E7A009FFE69 /* UIComponents.swift in Sources */,
+				9E042328257FD533004BAC83 /* BridgeEngineResourceProvider.mm in Sources */,
 				9E894989257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */,
 				9E894991257C6AC0009FFE69 /* exp.cpp in Sources */,
 				9E894977257C6AC0009FFE69 /* History.cpp in Sources */,
