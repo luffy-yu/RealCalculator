@@ -7,135 +7,85 @@
 
 import SwiftUI
 
-let color_light_gray:Color =
-    Color(.sRGB, red: 0.1, green: 0.1, blue: 0.1, opacity: 1.0)
-    
-let default_color:Color =
-    Color(.sRGB, red: 0.3, green: 0.3, blue: 0.3, opacity: 1.0)
-
-let switch_color:Color =
-    Color(.sRGB, red: 0.5, green: 0.5, blue: 0.5, opacity: 1.0)
-
-let special_colors: [String: Color] = [
-    "C": Color.gray,
-    "±": Color.gray,
-    "%": Color.gray,
-    
-    "÷": Color.orange,
-    "×": Color.orange,
-    "-": Color.orange,
-    "+": Color.orange,
-    
-    "N/s": switch_color,
-    "n/S": switch_color,
-]
-
-func get_color_by_str(_ name: String) -> Color
-{
-    return special_colors[name] ?? default_color
-}
-
 let hstack_space:CGFloat = 5
 let vstack_space:CGFloat = 5
 
+let screen_width = UIScreen.main.bounds.size.width
+let screen_height = UIScreen.main.bounds.size.height
+
 let pds = PrimaryDisplaySetter.getInstance();
-let primaryDisplay = PrimaryDisplay(setter: pds, width: UIScreen.main.bounds.size.width)
+let primaryDisplay = PrimaryDisplay(setter: pds, width: screen_width)
 
-struct CustomButton : View {
-    let title: String
-    let width: CGFloat
-    let height: CGFloat
-    let bg: Color
-    var body: some View{
-        Button(action: {
-//            pds.set_value(s: self.title)
-            var co: CustomObject = CustomObject()
-            co.get_number(10)
-        }){
-            Text(title)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.system(.largeTitle, design: .monospaced))
-                .padding()
-                .frame(width: width, height: height, alignment: .center)
-                .background(get_color_by_str(title))
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.white)
-        }
-    }
-}
+let hds = HistoryDisplaySetter.getInstance()
+let historyDisplay = HistoryDisplay(setter: hds, width: screen_width)
 
-struct HStackButtons: View {
-    let buttons: [String]
-    let height: CGFloat
-    let width: CGFloat
-    var rows: [GridItem] =
-            Array(repeating: .init(), count: 4)
-    var color: Color = Color.orange
-    var body: some View{
-        LazyVGrid(columns: rows){
-            ForEach(
-                0...buttons.count-1,
-                id: \.self
-            ) {
-                CustomButton(title: buttons[$0],
-                             width: width,
-                             height: height, bg:color)
-            }
-        }.lineSpacing(vstack_space)
-    }
-}
+let btn_width = screen_width / 4.0
+let btn_height = screen_height * 0.618 / 6.0
+
+let primary_display_height = screen_height * (1-0.618) * 0.618
+
+let history_display_height = screen_height * (1-0.7) * (1-0.618)
+
+let btns_top0 = LineButtons(buttons: [
+    KeyboardButton(title: "Fn", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "CE", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "C", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "Del", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
+
+let btns_top1 = LineButtons(buttons: [
+    KeyboardButton(title: "%", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "(", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: ")", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "÷", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
+
+let btns_top2 = LineButtons(buttons: [
+    KeyboardButton(title: "7", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "8", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "9", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "×", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
+
+let btns_top3 = LineButtons(buttons: [
+    KeyboardButton(title: "4", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "5", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "6", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "-", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
+
+let btns_top4 = LineButtons(buttons: [
+    KeyboardButton(title: "1", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "2", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "3", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "+", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
+
+let btns_top5 = LineButtons(buttons: [
+    KeyboardButton(title: "±", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "0", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: ".", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "=", width: btn_width, height: btn_height, bg: Color.gray),
+], linespace: hstack_space)
 
 struct NormalUIView: View {
     
-//    @State public var primary_text: String = "10"
-    
-    let screenSize: CGRect = UIScreen.main.bounds
-    
-    let available_width = UIScreen.main.bounds.size.width
-    let available_height = UIScreen.main.bounds.height
-    
-    let btn_width = UIScreen.main.bounds.size.width / 4.0
-    let btn_height = UIScreen.main.bounds.size.height * 0.618 / 5.0
-    
-    let primary_display_height = UIScreen.main.bounds.size.height * (1-0.618) * 0.618
-    
-    let history_display_height =
-        UIScreen.main.bounds.size.height * (1-0.7) * (1-0.618)
-    
-    var btns0:[String] = ["N/s", "0", ".", "="]
-    
-    var btns1:[String] = ["1", "2", "3", "+"]
-    
-    var btns2:[String] = ["4", "5", "6", "-"]
-    
-    var btns3:[String] = ["7", "8", "9", "×"]
-    
-    var btns4:[String] = ["C", "±", "%", "÷"]
-    
     var rows: [GridItem] =
-            Array(repeating: .init(), count: 7)
+            Array(repeating: .init(), count: 8)
     
     var body: some View {
         LazyHGrid(rows: rows, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: hstack_space, pinnedViews: /*@START_MENU_TOKEN@*/[]/*@END_MENU_TOKEN@*/, content: {
-            Text("2 + 345")
-                .frame(width: available_width, height: nil, alignment: .trailing)
-                .padding(.trailing, 10)
-                .foregroundColor(Color.gray)
-                .font(.system(size: 60))
-//            Text(self.primary_text).frame(width: available_width, height: nil, alignment: .trailing)
-//                .padding(.trailing, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-//                .foregroundColor(Color.white)
-//                .font(.system(size: 100))
+            historyDisplay
             primaryDisplay
-            HStackButtons(buttons: btns4, height: btn_height, width: btn_width)
-            HStackButtons(buttons: btns3, height: btn_height, width: btn_width)
-            HStackButtons(buttons: btns2, height: btn_height, width: btn_width)
-            HStackButtons(buttons: btns1, height: btn_height, width: btn_width)
-            HStackButtons(buttons: btns0, height: btn_height, width: btn_width)
+            btns_top0
+            btns_top1
+            btns_top2
+            btns_top3
+            btns_top4
+            btns_top5
         })
-        .frame(width: available_width, height: available_height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .frame(width: screen_width, height: screen_height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .background(Color.black)
-//        .scaledToFill()
         .edgesIgnoringSafeArea(.all)
     }
 }

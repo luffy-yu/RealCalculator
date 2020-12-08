@@ -100,8 +100,8 @@
 		9E894A6C257D34F6009FFE69 /* BridgeCalculatorDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894A6A257D34F6009FFE69 /* BridgeCalculatorDisplay.mm */; };
 		9E894AAB257E7677009FFE69 /* CalculatorDisplayCallBack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AAA257E7677009FFE69 /* CalculatorDisplayCallBack.mm */; };
 		9E894AAC257E7677009FFE69 /* CalculatorDisplayCallBack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AAA257E7677009FFE69 /* CalculatorDisplayCallBack.mm */; };
-		9E894AB2257E7E7A009FFE69 /* PrimaryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AB1257E7E7A009FFE69 /* PrimaryDisplay.swift */; };
-		9E894AB3257E7E7A009FFE69 /* PrimaryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AB1257E7E7A009FFE69 /* PrimaryDisplay.swift */; };
+		9E894AB2257E7E7A009FFE69 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AB1257E7E7A009FFE69 /* UIComponents.swift */; };
+		9E894AB3257E7E7A009FFE69 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E894AB1257E7E7A009FFE69 /* UIComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,7 +219,7 @@
 		9E894A6A257D34F6009FFE69 /* BridgeCalculatorDisplay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeCalculatorDisplay.mm; sourceTree = "<group>"; };
 		9E894AA9257E7677009FFE69 /* CalculatorDisplayCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorDisplayCallBack.h; sourceTree = "<group>"; };
 		9E894AAA257E7677009FFE69 /* CalculatorDisplayCallBack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalculatorDisplayCallBack.mm; sourceTree = "<group>"; };
-		9E894AB1257E7E7A009FFE69 /* PrimaryDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryDisplay.swift; sourceTree = "<group>"; };
+		9E894AB1257E7E7A009FFE69 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +279,7 @@
 				9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */,
 				9E89467A257B9744009FFE69 /* TestSwift.swift */,
 				9E894A62257CB803009FFE69 /* NormalUIView.swift */,
-				9E894AB1257E7E7A009FFE69 /* PrimaryDisplay.swift */,
+				9E894AB1257E7E7A009FFE69 /* UIComponents.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -603,7 +603,7 @@
 				9E89457B25738CE9009FFE69 /* ContentView.swift in Sources */,
 				9E8949B0257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */,
 				9E89499A257C6AC0009FFE69 /* fact.cpp in Sources */,
-				9E894AB2257E7E7A009FFE69 /* PrimaryDisplay.swift in Sources */,
+				9E894AB2257E7E7A009FFE69 /* UIComponents.swift in Sources */,
 				9E894633257B8018009FFE69 /* CustomObject.mm in Sources */,
 				9E89499E257C6AC0009FFE69 /* conv.cpp in Sources */,
 				9E89457925738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
@@ -678,7 +678,7 @@
 				9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */,
 				9E8949B5257C6AC0009FFE69 /* main.cpp in Sources */,
 				9E894975257C6AC0009FFE69 /* CalcInput.cpp in Sources */,
-				9E894AB3257E7E7A009FFE69 /* PrimaryDisplay.swift in Sources */,
+				9E894AB3257E7E7A009FFE69 /* UIComponents.swift in Sources */,
 				9E894989257C6AC0009FFE69 /* ExpressionCommand.cpp in Sources */,
 				9E894991257C6AC0009FFE69 /* exp.cpp in Sources */,
 				9E894977257C6AC0009FFE69 /* History.cpp in Sources */,

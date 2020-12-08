@@ -23,6 +23,6 @@
 {
     printf("from oc SetPrimaryDisplay");
     PrimaryDisplaySetter *pds = [PrimaryDisplaySetter getInstance];
-    [pds set_valueWithS:str];
+    [pds set_value:str];
 }
 @end
