@@ -12,7 +12,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BridgeCalculatorManager : NSObject
-+(BridgeCalculatorManager*) getInstance: (BridgeCalculatorDisplay*) display Provider: (BridgeEngineResourceProvider*) provider;
+//+(void)init;
++(void)send_command: (int) num;
 @end
+
+//bool initialized = false;
 
 NS_ASSUME_NONNULL_END

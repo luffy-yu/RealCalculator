@@ -12,6 +12,7 @@
 static BridgeCalculatorDisplay *display = [BridgeCalculatorDisplay getInstance];
 
 CalculatorDisplayCallBack::CalculatorDisplayCallBack(){
+    
 }
 
 
@@ -21,3 +22,11 @@ void CalculatorDisplayCallBack::SetPrimaryDisplay(const std::wstring &str, bool 
     NSString *data  = [[NSString alloc] initWithBytes:str.data() length:str.size() * sizeof(wchar_t) encoding:NSUTF32LittleEndianStringEncoding];
     [display SetPrimaryDisplay:data isError:isError];
 }
+
+void CalculatorDisplayCallBack::SetExpressionDisplay(std::wstring &str, bool isError) {
+    printf("SetExpressionDisplay2");
+    NSString *data  = [[NSString alloc] initWithBytes:str.data() length:str.size() * sizeof(wchar_t) encoding:NSUTF32LittleEndianStringEncoding];
+    [display SetExpressionDisplay:data isError:isError];
+    
+}
+

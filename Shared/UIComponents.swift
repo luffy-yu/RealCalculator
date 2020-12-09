@@ -81,12 +81,14 @@ struct HistoryDisplay: View {
 // button of keyboard
 struct KeyboardButton : View {
     let title: String
+    let _id: Int32
     let width: CGFloat
     let height: CGFloat
     let bg: Color
     var body: some View{
         Button(action: {
-            PrimaryDisplaySetter.getInstance().set_value(self.title)
+//            PrimaryDisplaySetter.getInstance().set_value(self.title)
+            BridgeCalculatorManager.send_command(self._id)
         }){
             Text(title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

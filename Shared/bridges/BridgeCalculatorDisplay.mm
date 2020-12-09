@@ -26,13 +26,11 @@
     [pds set_value:str];
 }
 
-//-(CalculatorDisplay*) getCalculatorDisplay
-//{
-//    static BridgeCalculatorDisplay *m_calculatorDisplay = NULL;
-//    static dispatch_once_t once;
-//    dispatch_once(&once, ^{
-//        m_calculatorDisplay = [[self alloc] init];
-//    });
-//    return m_calculatorDisplay;
-//}
+-(void) SetExpressionDisplay: (NSString*) str isError: (BOOL) flag
+{
+    HistoryDisplaySetter *hds = [HistoryDisplaySetter getInstance];
+    [hds set_value:str];
+}
+
+
 @end

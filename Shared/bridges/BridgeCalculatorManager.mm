@@ -8,32 +8,55 @@
 #import "BridgeCalculatorManager.h"
 #include "CalculatorManager.h"
 
+#import "../CM/MainAdaptor.h"
+#include "ResourceProvider.h"
+#include "CalculatorManager.h"
+#include "CalculatorButtonUser.h"
+#include "CalculatorDisplay.h"
+#include "EngineResourceProvider.h"
+#include "CalculatorResource.h"
+#include "CEngine/History.h"
+#include "BridgeCalculatorDisplay.h"
+
+using namespace std;
+using std::cout;
+
+using namespace CalculatorApp;
 using CalculationManager::CalculatorManager;
 
-static CalculatorManager *cm = NULL;
-static BridgeCalculatorDisplay *bcd = NULL;
-static BridgeEngineResourceProvider *becp = NULL;
+//static CalculatorManager *cm = NULL;
+//static BridgeCalculatorDisplay *bcd = NULL;
+//static BridgeEngineResourceProvider *becp = NULL;
 
 @implementation BridgeCalculatorManager
 
-//+ (nonnull BridgeCalculatorManager *)getInstance { 
-//    static BridgeCalculatorManager *m_bcm = NULL;
-//    static dispatch_once_t once;
-//    dispatch_once(&once, ^{
-//        m_bcm = [[self alloc] init];
-//    });
-//    return m_bcm;
-//}
-
-+ (nonnull BridgeCalculatorManager *)getInstance:(nonnull BridgeCalculatorDisplay *)display Provider:(nonnull BridgeEngineResourceProvider *)provider {
-    bcd = display;
-    becp = provider;
-    static BridgeCalculatorManager *m_bcm = NULL;
++(CalculatorManager*) getCalculatorManager
+{
+    static CalculatorManager *m_CalculatorManager = NULL;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
-        m_bcm = [[self alloc] init];
+        CalculatorDisplay *m_calculatorDisplay = new CalculatorDisplay();
+        EngineResourceProvider *m_resourceProvider = new EngineResourceProvider();
+        m_CalculatorManager = new CalculatorManager(m_calculatorDisplay, m_resourceProvider);
+        
+        CalculatorDisplayCallBack *display = new CalculatorDisplayCallBack();
+        m_calculatorDisplay->SetCallback(display);
+        
+        send_command(*m_CalculatorManager, NumbersAndOperatorsEnum::IsStandardMode);
     });
-    return m_bcm;
+    return m_CalculatorManager;
+}
+
++(void)send_command: (int) num
+{
+//    if (!initialized){
+//        CalculatorManager *cm = [BridgeCalculatorManager getCalculatorManager];
+//        send_command(*cm, NumbersAndOperatorsEnum::IsStandardMode);
+//        initialized = true;
+//    }
+    CalculatorManager *cm = [BridgeCalculatorManager getCalculatorManager];
+    NumbersAndOperatorsEnum numOpEnum = (NumbersAndOperatorsEnum)num;
+    send_command(*cm, numOpEnum);
 }
 
 @end

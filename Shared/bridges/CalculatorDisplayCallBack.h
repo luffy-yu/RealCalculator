@@ -9,6 +9,7 @@
 #define CalculatorDisplayCallBack_h
 
 #include <iostream>
+#include "ExpressionCommandInterface.h"
 
 using std::wstring;
 
@@ -19,6 +20,8 @@ public:
     
 public:
     void SetPrimaryDisplay(const wstring & str, bool isError);
+    
+    static void SetExpressionDisplay(std::wstring &str, bool isError);
 };
 
 
