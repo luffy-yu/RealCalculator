@@ -28,7 +28,7 @@ let history_display_height = screen_height * (1-0.7) * (1-0.618)
 
 let btns_top0 = LineButtons(buttons: [
     KeyboardButton(title: "Fn", width: btn_width, height: btn_height, bg: Color.gray),
-    KeyboardButton(title: "CE", width: btn_width, height: btn_height, bg: Color.gray),
+    KeyboardButton(title: "Hy", width: btn_width, height: btn_height, bg: Color.gray),
     KeyboardButton(title: "C", width: btn_width, height: btn_height, bg: Color.gray),
     KeyboardButton(title: "Del", width: btn_width, height: btn_height, bg: Color.gray),
 ], linespace: hstack_space)

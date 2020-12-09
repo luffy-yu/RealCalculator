@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BridgeEngineResourceProvider : NSObject
 
++(BridgeEngineResourceProvider*) getInstance;
 @end
 
 NS_ASSUME_NONNULL_END

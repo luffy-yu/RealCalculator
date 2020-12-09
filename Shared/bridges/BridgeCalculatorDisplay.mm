@@ -25,4 +25,14 @@
     PrimaryDisplaySetter *pds = [PrimaryDisplaySetter getInstance];
     [pds set_value:str];
 }
+
+//-(CalculatorDisplay*) getCalculatorDisplay
+//{
+//    static BridgeCalculatorDisplay *m_calculatorDisplay = NULL;
+//    static dispatch_once_t once;
+//    dispatch_once(&once, ^{
+//        m_calculatorDisplay = [[self alloc] init];
+//    });
+//    return m_calculatorDisplay;
+//}
 @end
