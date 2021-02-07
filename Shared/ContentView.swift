@@ -8,15 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    var co: CustomObject = CustomObject()
     var body: some View {
-//        Text("Hello, world!")
-//            .padding()
         Button("click", action: {
-            
-            var num:Int = Int(co.get_number(10))
-            
-            print(num)
+            print("Hello World")
         })
     }
 }

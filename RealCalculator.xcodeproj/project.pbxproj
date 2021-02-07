@@ -19,10 +19,6 @@
 		9E89457C25738CE9009FFE69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89455125738CE6009FFE69 /* ContentView.swift */; };
 		9E89457D25738CE9009FFE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E89455225738CE9009FFE69 /* Assets.xcassets */; };
 		9E89457E25738CE9009FFE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E89455225738CE9009FFE69 /* Assets.xcassets */; };
-		9E894633257B8018009FFE69 /* CustomObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894632257B8018009FFE69 /* CustomObject.mm */; };
-		9E894634257B8018009FFE69 /* CustomObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894632257B8018009FFE69 /* CustomObject.mm */; };
-		9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
-		9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89467A257B9744009FFE69 /* TestSwift.swift */; };
 		9E89470A257BF027009FFE69 /* BridgeOne.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894709257BF027009FFE69 /* BridgeOne.mm */; };
 		9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E894709257BF027009FFE69 /* BridgeOne.mm */; };
 		9E89496C257C6AC0009FFE69 /* StandardCalculatorViewModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */; };
@@ -145,9 +141,6 @@
 		9E89457625738CE9009FFE69 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9E89457825738CE9009FFE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
-		9E894631257B8018009FFE69 /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
-		9E894632257B8018009FFE69 /* CustomObject.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomObject.mm; sourceTree = "<group>"; };
-		9E89467A257B9744009FFE69 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		9E894708257BF027009FFE69 /* BridgeOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeOne.h; sourceTree = "<group>"; };
 		9E894709257BF027009FFE69 /* BridgeOne.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BridgeOne.mm; sourceTree = "<group>"; };
 		9E894922257C6ABF009FFE69 /* StandardCalculatorViewModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StandardCalculatorViewModel.cpp; sourceTree = "<group>"; };
@@ -282,10 +275,7 @@
 				9E89455025738CE6009FFE69 /* RealCalculatorApp.swift */,
 				9E89455125738CE6009FFE69 /* ContentView.swift */,
 				9E89455225738CE9009FFE69 /* Assets.xcassets */,
-				9E894631257B8018009FFE69 /* CustomObject.h */,
-				9E894632257B8018009FFE69 /* CustomObject.mm */,
 				9E894630257B8018009FFE69 /* RealCalculator-Bridging-Header.h */,
-				9E89467A257B9744009FFE69 /* TestSwift.swift */,
 				9E894A62257CB803009FFE69 /* NormalUIView.swift */,
 				9E894AB1257E7E7A009FFE69 /* UIComponents.swift */,
 			);
@@ -616,7 +606,6 @@
 				9E8949B0257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */,
 				9E89499A257C6AC0009FFE69 /* fact.cpp in Sources */,
 				9E894AB2257E7E7A009FFE69 /* UIComponents.swift in Sources */,
-				9E894633257B8018009FFE69 /* CustomObject.mm in Sources */,
 				9E89499E257C6AC0009FFE69 /* conv.cpp in Sources */,
 				9E89457925738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
 				9E894984257C6AC0009FFE69 /* scicomm.cpp in Sources */,
@@ -634,7 +623,6 @@
 				9E89498A257C6AC0009FFE69 /* StringUtils.cpp in Sources */,
 				9E89498E257C6AC0009FFE69 /* logic.cpp in Sources */,
 				9E894A6B257D34F6009FFE69 /* BridgeCalculatorDisplay.mm in Sources */,
-				9E89467B257B9744009FFE69 /* TestSwift.swift in Sources */,
 				9E894A63257CB803009FFE69 /* NormalUIView.swift in Sources */,
 				9E894972257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
 				9E89497A257C6AC0009FFE69 /* calc.cpp in Sources */,
@@ -670,7 +658,6 @@
 				9E89457C25738CE9009FFE69 /* ContentView.swift in Sources */,
 				9E8949B1257C6AC0009FFE69 /* EngineResourceProvider.cpp in Sources */,
 				9E89499B257C6AC0009FFE69 /* fact.cpp in Sources */,
-				9E894634257B8018009FFE69 /* CustomObject.mm in Sources */,
 				9E89499F257C6AC0009FFE69 /* conv.cpp in Sources */,
 				9E89457A25738CE9009FFE69 /* RealCalculatorApp.swift in Sources */,
 				9E894985257C6AC0009FFE69 /* scicomm.cpp in Sources */,
@@ -686,7 +673,6 @@
 				9E89497D257C6AC0009FFE69 /* RationalMath.cpp in Sources */,
 				9E89498B257C6AC0009FFE69 /* StringUtils.cpp in Sources */,
 				9E89498F257C6AC0009FFE69 /* logic.cpp in Sources */,
-				9E89467C257B9744009FFE69 /* TestSwift.swift in Sources */,
 				9E894973257C6AC0009FFE69 /* CalcUtils.cpp in Sources */,
 				9E89497B257C6AC0009FFE69 /* calc.cpp in Sources */,
 				9E89470B257BF027009FFE69 /* BridgeOne.mm in Sources */,
